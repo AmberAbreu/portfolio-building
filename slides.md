@@ -49,20 +49,16 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 # Why Gatsby.js?
 
-Gatsby.js is a ...
+According to the Gatsby.js website...
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
+- 🏎 **Speed** - "Source content faster. Compile and build faster. Build the fastest websites on the web…faster."
+- ⚖️ **Scale** - "Deploy and host on Content Delivery Networks, delivering content to visitors faster than traditional servers."
+- 🔐 **Security** - "Statically generated sites have less vulnerabilities than traditional websites and monolithic platforms."
 
 <br>
 <br>
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+You can find out more about [Gatsby.js](https://www.gatsbyjs.com/why-gatsby/)
 
 <!--
 You can have `style` tag in markdown to override the style for the current page.
@@ -83,39 +79,50 @@ h1 {
 
 ---
 
-# Let's Begin! Downloading the Gatsby CLI
+# Let's Begin!
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
+Only a few steps to begin our Gatsby project:
 
-### Keyboard Shortcuts
+1. Downloading the Gatsby CLI
+
+```ts
+npm install -g gatsby-cli
+```
+
+2. Create a new project
+
+```ts
+gatsby new
+```
+
+These steps can be found on the [Gatsby Website](https://www.gatsbyjs.com/docs/tutorial/part-1/)
+
+<!-- SHOW IMAGES OF THE PROCESS? OR SHOULD I LIVE CODE THIS? -->
+<!-- ### Keyboard Shortcuts
 
 |                                                    |                             |
 | -------------------------------------------------- | --------------------------- |
 | <kbd>right</kbd> / <kbd>space</kbd>                | next animation or slide     |
 | <kbd>left</kbd> / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
 | <kbd>up</kbd>                                      | previous slide              |
-| <kbd>down</kbd>                                    | next slide                  |
+| <kbd>down</kbd>                                    | next slide                  | -->
 
 <!-- https://sli.dev/guide/animations.html#click-animations -->
 
-<img
+<!-- <img
   v-click
   class="absolute -bottom-9 -left-7 w-80 opacity-50"
   src="https://sli.dev/assets/arrow-bottom-left.svg"
 />
 
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
-
----
-
-layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
+<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p> -->
 
 ---
 
 # Getting familiar with the directory
 
-Use code snippets and get the highlighting directly![^1]
+Talk through best practice, the places we will mainly be working in, and the overall structure
+We will mainly be working in \_\_\_
 
 ```ts {all|2|1-6|9|all}
 interface User {
