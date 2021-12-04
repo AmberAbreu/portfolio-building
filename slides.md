@@ -97,6 +97,24 @@ gatsby new
 
 These steps can be found on the [Gatsby Website](https://www.gatsbyjs.com/docs/tutorial/part-1/)
 
+---
+
+<div className="images">
+<img src="/images/gatsby-setup1.png"/>
+<img src="/images/gatsby-setup2.png"/>
+</div>
+
+<style>
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+img {
+  width: 300px;
+}
+</style>
+
 <!-- SHOW IMAGES OF THE PROCESS? OR SHOULD I LIVE CODE THIS? -->
 <!-- ### Keyboard Shortcuts
 
@@ -122,22 +140,26 @@ These steps can be found on the [Gatsby Website](https://www.gatsbyjs.com/docs/t
 # Getting familiar with the directory
 
 Talk through best practice, the places we will mainly be working in, and the overall structure
-We will mainly be working in \_\_\_
+We will mainly be working in
 
-```ts {all|2|1-6|9|all}
-interface User {
-  id: number;
-  firstName: string;
-  lastName: string;
-  role: string;
-}
+<div className="container">
+  <img src="/images/gatsby-directory.png"/>
+  <div>
+    <b> src/pages </b>: Where our routes live. In plain React we learned to use ReactRouter to create these routes. However Gatsby does this for you. Nested routes will live in a folder. The index.js file will be the base route.
+      <!-- want to word this/display this a bit better -->
+   ex: codythepug.com will show src/pages/index.js. codythepug.com/my-projects will show src/pages/my-projects/index.js and codythepug.com/my-projects/codyscafe will show src/pages/my-projects/codyscafe
+  </div>
+</div>
 
-function updateUser(id: number, update: User) {
-  const user = getUser(id);
-  const newUser = { ...user, ...update };
-  saveUser(id, newUser);
-}
-```
+   <style>
+     .container {
+       display: flex;
+       flex-direction: column;
+     }
+    img {
+       width: 200px;
+     }
+   </style>
 
 <arrow v-click="3" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
 
@@ -157,14 +179,18 @@ function updateUser(id: number, update: User) {
 
 ---
 
-# Components
+#Do not forget to create a github repo!
+
+---
+
+# Structure
 
 <div grid="~ cols-2 gap-4">
 <div>
 
-You can use Vue components directly inside your slides.
+You can customize your portfolio to your liking. However, remember that your portfolio should demonstrate personality as well as expertise.
 
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
+A basic portfolio should contain: a nav bar, an about section, a projects section, and a technology section.
 
 ```html
 <Counter :count="10" />
