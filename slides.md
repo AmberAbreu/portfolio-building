@@ -179,7 +179,17 @@ We will mainly be working in
 
 ---
 
-#Do not forget to create a github repo!
+## #Do not forget to create a github repo!
+
+---
+
+# gatsby.config
+
+This is where we put in our plugins
+
+ex: picture
+
+Be sure to restart your app everytime you make changes to the gatsby.config
 
 ---
 
